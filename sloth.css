@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background: linear-gradient(to bottom, #6b7f24 0%, #f3f3f3 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  padding: 30px 40px;
+  position: relative;
+}
+
+/* TOP BAR */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #f5f5f5;
+}
+
+.tagline {
+  letter-spacing: 1px;
+}
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.back-home:hover {
+  opacity: 0.8;
+}
+
+.icon-box {
+  border: 2px solid #f9f9f9;
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 18px;
+}
+
+/* CENTER 404 + SLOTH */
+
+.center-area {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: visible;
+}
+
+.big-404 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 40px;
+  font-size: clamp(120px, 22vw, 260px);
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.35);
+  text-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+.big-404 span {
+  line-height: 0.8;
+}
+
+/* adjust image name/path to your file */
+.sloth-image {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  transform: translateX(-50%);
+  max-height: 110%;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.7));
+}
+
+/* BOTTOM TEXT */
+
+.bottom-text {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+}
